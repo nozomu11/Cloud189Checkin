@@ -11,6 +11,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # 【删掉了 environment: user 这一行，这就是审批根源】
     steps:
       - name: 🔀 random delay 0-300 seconds
         run: sleep $((RANDOM % 301))
